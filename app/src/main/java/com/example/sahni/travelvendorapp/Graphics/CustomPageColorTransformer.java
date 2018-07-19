@@ -10,7 +10,7 @@ import com.example.sahni.travelvendorapp.R;
  * Created by sahni on 3/7/18.
  */
 
-public class CustomPageTransformer implements ViewPager.PageTransformer {
+public class CustomPageColorTransformer implements ViewPager.PageTransformer {
     @Override
     public void transformPage(@NonNull View page, float position) {
 

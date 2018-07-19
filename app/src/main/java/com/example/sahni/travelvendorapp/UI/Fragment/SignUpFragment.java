@@ -39,6 +39,7 @@ public class SignUpFragment extends Fragment {
     TextView numberVehicle;
     TextView addVehicle;
     TextView addDriver;
+    TextView text;
 
     public SignUpFragment() {
         // Required empty public constructor
@@ -66,6 +67,7 @@ public class SignUpFragment extends Fragment {
         numberVehicle=rootLayout.findViewById(R.id.number_vehicles);
         addDriver=rootLayout.findViewById(R.id.add_driver);
         addVehicle=rootLayout.findViewById(R.id.add_vehicle);
+        text=rootLayout.findViewById(R.id.text);
 
         SetDetails();
 
@@ -123,10 +125,16 @@ public class SignUpFragment extends Fragment {
         }
         if(numberVehicle.getText().toString().equals("0")||numberDriver.getText().toString().equals("0")){
             Toast.makeText(getContext(),"Add atleast one Driver and Vehicle",Toast.LENGTH_SHORT).show();
+            ChangeTextColor();
             return 0;
         }
         return -1;
     }
+
+    public void ChangeTextColor() {
+
+    }
+
     public void ToggleProgress(){
         if(progressBar.getVisibility()==View.VISIBLE){
             progressBar.setVisibility(View.GONE);

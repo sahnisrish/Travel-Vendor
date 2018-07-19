@@ -94,7 +94,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:text="Create an account"
-            android:textColor="@color/grey"
+            android:textColor="@color/colorOrange"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/login"

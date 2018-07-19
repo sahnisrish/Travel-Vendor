@@ -21,9 +21,10 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoTitle" />
         <activity
-            android:name=".UI.Activity.AddDriverActivity"
-            android:label="@string/title_activity_add_driver"
-            android:theme="@style/AppTheme.NoTitle"></activity>
+            android:name=".UI.Activity.AddVehicleActivity"
+            android:label="@string/title_activity_add_vehicle"
+            android:theme="@style/AppTheme.NoTitle" />
+        <activity android:name=".UI.Activity.AddDriverActivity"></activity>
     </application>
 
 </manifest>

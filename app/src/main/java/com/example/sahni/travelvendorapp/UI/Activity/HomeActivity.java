@@ -25,7 +25,7 @@ import com.example.sahni.travelvendorapp.Constant;
 import com.example.sahni.travelvendorapp.Data.Job;
 import com.example.sahni.travelvendorapp.Data.Vendor;
 import com.example.sahni.travelvendorapp.Graphics.ColorShades;
-import com.example.sahni.travelvendorapp.Graphics.CustomPageTransformer;
+import com.example.sahni.travelvendorapp.Graphics.CustomPageColorTransformer;
 import com.example.sahni.travelvendorapp.R;
 import com.example.sahni.travelvendorapp.UI.Fragment.BookingFragment;
 import com.example.sahni.travelvendorapp.UI.Fragment.DriversFragment;
@@ -92,7 +92,7 @@ public class HomeActivity extends AppCompatActivity
             public void onPageScrollStateChanged(int state) {
             }
         });
-        viewPager.setPageTransformer(true, new CustomPageTransformer());
+        viewPager.setPageTransformer(true, new CustomPageColorTransformer());
         viewPager.setOffscreenPageLimit(3);
 
         viewModel.fetchVendor(getSharedPreferences(Constant.SHARED_PREFRENCE,MODE_PRIVATE)).observe(this, new Observer<Vendor>() {
